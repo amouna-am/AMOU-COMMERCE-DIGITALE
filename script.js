@@ -310,3 +310,73 @@ document.addEventListener('DOMContentLoaded', function() {
     setupMobileMenu();
     updateCartCount();
 });
+// Validation du formulaire de contact
+function setupContactForm() {
+    const contactForm = document.getElementById('contactForm');
+    
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Réinitialiser les messages d'erreur
+        clearErrors();
+        
+        // Valider les champs
+        let isValid = true;
+        
+        const name = document.getElementById('name');
+        if (!name.value.trim()) {
+            showError('nameError', 'Le nom est requis');
+            isValid = false;
+        }
+        
+        const email = document.getElementById('email');
+        if (!email.value.trim()) {
+            showError('emailError', 'L\'email est requis');
+            isValid = false;
+        } else if (!isValidEmail(email.value)) {
+            showError('emailError', 'Format d\'email invalide');
+            isValid = false;
+        }
+        
+        const subject = document.getElementById('subject');
+        if (!subject.value) {
+            showError('subjectError', 'Veuillez sélectionner un sujet');
+            isValid = false;
+        }
+        
+        const message = document.getElementById('message');
+        if (!message.value.trim()) {
+            showError('messageError', 'Le message est requis');
+            isValid = false;
+        }
+        
+        if (isValid) {
+            // Ici, normalement, vous enverriez les données à un serveur
+            alert('Merci pour votre message! Nous vous répondrons bientôt.');
+            contactForm.reset();
+        }
+    });
+}
+
+function showError(id, message) {
+    const errorElement = document.getElementById(id);
+    errorElement.textContent = message;
+}
+
+function clearErrors() {
+    const errorElements = document.querySelectorAll('.error-message');
+    errorElements.forEach(element => {
+        element.textContent = '';
+    });
+}
+
+function isValidEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+// Ajoutez cet appel à votre fonction d'initialisation
+document.addEventListener('DOMContentLoaded', function() {
+    // ... autres initialisations
+    setupContactForm();
+});

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AMOU COMMERCE DIGITALE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-img">ACD</div>
+                    <div>
+                        <div class="logo-text">AMOU COMMERCE DIGITALE</div>
+                        <div class="logo-slogan">DE TON CHOIX</div>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="apropos.html">À propos</a></li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="temoignages.html">Témoignages</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                        <li><a href="#cart" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Nos coordonnées</h3>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Avenue du Commerce, Moundou, Tchad</p>
+                        <p><i class="fas fa-phone"></i> +235 22 55 66 77</p>
+                        <p><i class="fas fa-envelope"></i> contact@amoucommerce.td</p>
+                        <p><i class="fas fa-globe"></i> www.amoucommerce.td</p>
+                    </div>
+                    
+                    <h3>Heures d'ouverture</h3>
+                    <div class="opening-hours">
+                        <p>Lundi - Vendredi: 8h - 18h</p>
+                        <p>Samedi: 9h - 16h</p>
+                        <p>Dimanche: Fermé</p>
+                    </div>
+                    
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <select id="subject" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="question">Question sur un produit</option>
+                                <option value="complaint">Réclamation</option>
+                                <option value="partnership">Partenariat</option>
+                                <option value="other">Autre</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Map Section -->
+            <div class="map-section">
+                <h3>Notre localisation</h3>
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Carte interactive (à intégrer avec Google Maps)</p>
+                    <p>Adresse: Avenue du Commerce, Moundou, Tchad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>AMOU COMMERCE DIGITALE</h3>
+                    <p>Votre boutique en ligne de confiance à Moundou. Nous nous engageons à vous offrir les meilleurs produits.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="apropos.html">À propos</a></li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Moundou, Tchad</li>
+                        <li><i class="fas fa-phone"></i> +235 XX XX XX XX</li>
+                        <li><i class="fas fa-envelope"></i> contact@amoucommerce.td</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 AMOU COMMERCE DIGITALE. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
