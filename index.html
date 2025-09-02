@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMOU COMMERCE DIGITALE - Votre boutique en ligne</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-img">ACD</div>
+                    <div>
+                        <div class="logo-text">AMOU COMMERCE DIGITALE</div>
+                        <div class="logo-slogan">AMOU COMMERCE DIGITALE</div>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#products">Produits</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#testimonials">Témoignages</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#cart" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>AMOU COMMERCE DIGITALE</h1>
+            <p>Votre boutique en ligne à Moundou. Découvrez nos produits de qualité à des prix compétitifs.</p>
+            <a href="#products" class="btn">Découvrir nos produits</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Nos Produits</h2>
+            <div class="categories">
+                <button class="category-btn active" data-category="all">Tous</button>
+                <button class="category-btn" data-category="electronics">Électronique</button>
+                <button class="category-btn" data-category="fashion">Mode</button>
+                <button class="category-btn" data-category="home">Maison</button>
+            </div>
+            <div class="product-grid">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">À propos de nous</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Notre histoire</h3>
+                    <p>AMOU COMMERCE DIGITALE est une jeune entreprise de commerce en ligne basée à Moundou. Notre mission est de vous offrir une expérience d'achat en ligne exceptionnelle avec des produits de qualité à des prix abordables.</p>
+                    <p>Nous sélectionnons soigneusement chaque produit dans notre catalogue pour vous garantir satisfaction et qualité. Votre confiance est notre priorité.</p>
+                    <a href="#contact" class="btn">Contactez-nous</a>
+                </div>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Équipe AMOU COMMERCE DIGITALE">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Témoignages</h2>
+            <div class="testimonial-grid">
+                <!-- Testimonials will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Notre Blog</h2>
+            <div class="blog-grid">
+                <!-- Blog posts will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Nos coordonnées</h3>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Moundou, Tchad</p>
+                        <p><i class="fas fa-phone"></i> +235 66 00 00 00 </p>
+                        <p><i class="fas fa-envelope"></i> contact@amoucommerce.td</p>
+                        <p><i class="fas fa-globe"></i> www.amoucommerce.td</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>AMOU COMMERCE DIGITALE</h3>
+                    <p>Votre boutique en ligne de confiance à Moundou. Nous nous engageons à vous offrir les meilleurs produits.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#products">Produits</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Moundou, Tchad</li>
+                        <li><i class="fas fa-phone"></i> +235 66 00 00 00</li>
+                        <li><i class="fas fa-envelope"></i> contact@amoucommerce.td</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 AMOU COMMERCE DIGITALE. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
